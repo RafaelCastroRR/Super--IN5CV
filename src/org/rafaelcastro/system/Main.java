@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.rafaelcastro.controller.FormClientesController;
@@ -20,10 +19,8 @@ public class Main extends Application {
     
     @Override
     public void start(Stage stage) throws Exception{
-        this.stage = stage;
-        //Image icon = new Image("org/joseaguilar/image/Icon.png");
-        stage.setTitle("SuperMarket");
-        // stage.getIcons().add(icon);
+        this.stage = stage;        
+        stage.setTitle("SuperMarket");        
         menuPrincipalView();
         stage.show(); 
     }
