@@ -1,6 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.rafaelcastro.model;
 
-
+/**
+ *
+ * @author Usuario
+ */
 public class Cliente {
     private int clienteId;
     private String nombre;
@@ -10,7 +18,6 @@ public class Cliente {
     private String nit;
 
     public Cliente() {
-        
     }
 
     public Cliente(int clienteId, String nombre, String apellido, String telefono, String direccion, String nit) {
@@ -25,6 +32,7 @@ public class Cliente {
     public int getClienteId() {
         return clienteId;
     }
+
     public void setClienteId(int clienteId) {
         this.clienteId = clienteId;
     }
@@ -32,6 +40,7 @@ public class Cliente {
     public String getNombre() {
         return nombre;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -39,6 +48,7 @@ public class Cliente {
     public String getApellido() {
         return apellido;
     }
+
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
@@ -46,6 +56,7 @@ public class Cliente {
     public String getTelefono() {
         return telefono;
     }
+
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
@@ -53,6 +64,7 @@ public class Cliente {
     public String getDireccion() {
         return direccion;
     }
+
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
@@ -60,12 +72,21 @@ public class Cliente {
     public String getNit() {
         return nit;
     }
+
     public void setNit(String nit) {
         this.nit = nit;
     }
 
     @Override
     public String toString() {
-        return "Cliente{" + "clienteId=" + clienteId + ", nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + ", direccion=" + direccion + ", nit=" + nit + '}';
+        return "{Id: " + clienteId + '}' + " { Nombre: " + nombre + '}' +" { Apellido: " + apellido + '}';
     }
+    
+    
+
+   
+    
+    
+    
+    
 }

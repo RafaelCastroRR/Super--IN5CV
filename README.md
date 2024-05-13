@@ -1,2 +1,2 @@
-# Super--IN5CV
-Proyecto implementando javaFX, JDBC, MVC
+# IN5CV-Proyecto-superKinal2024
+Proyecto Implentando JavaFX, JDBC
