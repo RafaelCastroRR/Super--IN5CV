@@ -1,15 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.rafaelcastro.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ *
+ * @author Usuario
+ */
 public class Conexion {
     private static Conexion instance;
     
-    private String url = "jdbc:mysql://localhost:3306/superkinalin5cvdb?serverTimezone=GMT-6&useSSL=false";
+    private String url = "jdbc:mysql://localhost:3306/superKinalIN5CVDB?serverTimeZone=GMT-6&useSSL=false";   
     private String user = "JoseAguilar";
     private String password = "Aoz07295";
+   
     
     private Conexion(){
         try{
@@ -22,11 +32,11 @@ public class Conexion {
     public static Conexion getInstance(){
         if(instance == null){
             instance = new Conexion();
+           
         }
         return instance;
     }
-    
     public Connection obtenerConexion()throws SQLException{
-        return DriverManager.getConnection(url, user, password);
+        return DriverManager.getConnection(url,user,password);
     }
 }

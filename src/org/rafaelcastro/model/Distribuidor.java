@@ -9,32 +9,32 @@ package org.rafaelcastro.model;
  *
  * @author Usuario
  */
-public class Cliente {
-    private int clienteId;
+public class Distribuidor {
+    private int distribuidorId;
     private String nombre;
-    private String apellido;
-    private String telefono;
     private String direccion;
     private String nit;
+    private String telefono;
+    private String web;
 
-    public Cliente() {
+    public Distribuidor() {
     }
 
-    public Cliente(int clienteId, String nombre, String apellido, String telefono, String direccion, String nit) {
-        this.clienteId = clienteId;
+    public Distribuidor(int distribuidorId, String nombre, String direccion, String nit, String telefono, String web) {
+        this.distribuidorId = distribuidorId;
         this.nombre = nombre;
-        this.apellido = apellido;
-        this.telefono = telefono;
         this.direccion = direccion;
         this.nit = nit;
+        this.telefono = telefono;
+        this.web = web;
+    }
+    
+    public int getDistribuidorId() {
+        return distribuidorId;
     }
 
-    public int getClienteId() {
-        return clienteId;
-    }
-
-    public void setClienteId(int clienteId) {
-        this.clienteId = clienteId;
+    public void setDistribuidorId(int distribuidorId) {
+        this.distribuidorId = distribuidorId;
     }
 
     public String getNombre() {
@@ -43,14 +43,6 @@ public class Cliente {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getTelefono() {
@@ -77,15 +69,18 @@ public class Cliente {
         this.nit = nit;
     }
 
+    public String getWeb() {
+        return web;
+    }
+
+    public void setWeb(String web) {
+        this.web = web;
+    }
+
     @Override
     public String toString() {
-        return "{Id: " + clienteId + '}' + " { Nombre: " + nombre + '}' +" { Apellido: " + apellido + '}';
+        return "{Id: " + distribuidorId + '}' + " { Nombre: " + nombre + '}' +" { Web: " + web + '}';
     }
-    
-    
-
-   
-    
     
     
     
