@@ -1,33 +1,11 @@
 use superKinalIN5CVDB;
  
 delimiter $$
-create trigger verificacionCliente
-before insert on Facturas
-for each row
-begin
-	declare validacion boolean;
-    set validacion = fn_verificarCliente(new.Cliente.nit);
-    if !validacion then
-		signal sqlstate '45000'
-			set message_text = "La factura no se puede crear";
-    end if;
-end $$
-delimiter ;
+before insert on Facturasfor
+ each row
+
  
-delimiter $$
-create function fn_verificarCliente(nt int) returns boolean deterministic
-begin
-	declare flag boolean;
-    declare verificacion int;
-    set verificacion = (select count(*) from Clientes where nit = nt);
-    if verificacion = 1 then
-		set flag = true;
-	else
-		set flag = false;
-	end if;
-    return flag;
-end $$
-delimiter ;
+
  
 delimiter $$
 create function fn_totalFactura(facId int) returns decimal(10, 2) deterministic

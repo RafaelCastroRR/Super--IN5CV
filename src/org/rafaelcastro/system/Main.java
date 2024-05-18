@@ -63,7 +63,7 @@ public class Main extends Application {
     
     public void menuPrincipalView(){
         try{
-            MenuPrincipalController menuPrincipalView = (MenuPrincipalController)switchScene("MenuPrincipalView.fxml",1000,730);
+            MenuPrincipalController menuPrincipalView = (MenuPrincipalController)switchScene("MenuPrincipalView.fxml",950,730);
             menuPrincipalView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -83,7 +83,7 @@ public class Main extends Application {
         
     public void menuClientesView(){
         try{
-           MenuClienteController menuClientesView = (MenuClienteController)switchScene("MenuClienteView.fxml",1000,700); 
+           MenuClienteController menuClientesView = (MenuClienteController)switchScene("MenuClienteView.fxml",1000,680); 
            menuClientesView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -92,7 +92,7 @@ public class Main extends Application {
     
      public void menuTickettSoporteView(){
         try{
-            MenuTicketSoporteController menuTicketSoporteView = (MenuTicketSoporteController)switchScene("MenuTicketSoporteView.fxml",1000,700);
+            MenuTicketSoporteController menuTicketSoporteView = (MenuTicketSoporteController)switchScene("MenuTicketSoporteView.fxml",1000,680);
             menuTicketSoporteView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -101,7 +101,7 @@ public class Main extends Application {
      
     public void formDistribuidoresView(int op){
         try{
-            FormularioDistribuidorController formDistribuidoresView = (FormularioDistribuidorController)switchScene("FormularioDistribuidorView.fxml", 380, 520);
+            FormularioDistribuidorController formDistribuidoresView = (FormularioDistribuidorController)switchScene("FormularioDistribuidorView.fxml", 350, 520);
             formDistribuidoresView.setOp(op);
             formDistribuidoresView.setStage(this);
         }catch(Exception e){
@@ -111,7 +111,7 @@ public class Main extends Application {
     
     public void menuDistribuidorView(){
         try{
-            MenuDistribuidorController menuDistribuidorView = (MenuDistribuidorController)switchScene("MenuDistribuidorView.fxml",1000,700);
+            MenuDistribuidorController menuDistribuidorView = (MenuDistribuidorController)switchScene("MenuDistribuidorView.fxml",1000,680);
             menuDistribuidorView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -120,7 +120,7 @@ public class Main extends Application {
     
     public void formCargosView(int op){
         try{
-            FormularioCargoController formCargosView = (FormularioCargoController)switchScene("FormularioCargoView.fxml", 380, 520);
+            FormularioCargoController formCargosView = (FormularioCargoController)switchScene("FormularioCargoView.fxml", 350, 520);
             formCargosView.setOp(op);
             formCargosView.setStage(this);
         }catch(Exception e){
@@ -130,7 +130,7 @@ public class Main extends Application {
     
     public void menuCargoView(){
         try{
-            MenuCargoController menuCargoView = (MenuCargoController)switchScene("MenuCargoView.fxml",1000,700);
+            MenuCargoController menuCargoView = (MenuCargoController)switchScene("MenuCargoView.fxml",1000,680);
             menuCargoView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -139,7 +139,7 @@ public class Main extends Application {
     
     public void formEmpleadosView(int op){
         try{
-            FormularioEmpleadoController formEmpleadosView = (FormularioEmpleadoController)switchScene("FormularioEmpleadoView.fxml", 580, 720);
+            FormularioEmpleadoController formEmpleadosView = (FormularioEmpleadoController)switchScene("FormularioEmpleadoView.fxml", 580, 680);
             formEmpleadosView.setOp(op);
             formEmpleadosView.setStage(this);
         }catch(Exception e){
@@ -149,7 +149,7 @@ public class Main extends Application {
     
     public void menuEmpleadoView(){
         try{
-            MenuEmpleadoController menuEmpleadoView = (MenuEmpleadoController)switchScene("MenuEmpleadoView.fxml",1000,700);
+            MenuEmpleadoController menuEmpleadoView = (MenuEmpleadoController)switchScene("MenuEmpleadoView.fxml",1000,680);
             menuEmpleadoView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -160,7 +160,7 @@ public class Main extends Application {
     
     public void formCategoriaProductos(int op){
         try{
-            FormularioCategoriaProductoController formCategoriaProductos = (FormularioCategoriaProductoController)switchScene("FormularioCategoriaProductoView.fxml", 380, 520);
+            FormularioCategoriaProductoController formCategoriaProductos = (FormularioCategoriaProductoController)switchScene("FormularioCategoriaProductoView.fxml", 350, 520);
             formCategoriaProductos.setOp(op);
             formCategoriaProductos.setStage(this);
         }catch(Exception e){
@@ -170,7 +170,7 @@ public class Main extends Application {
     
     public void menuCategoriaProductoView(){
         try{
-            MenuCategoriaProductoController menuCategoriaProductoView = (MenuCategoriaProductoController)switchScene("MenuCategoriaProductoView.fxml",1000,700);
+            MenuCategoriaProductoController menuCategoriaProductoView = (MenuCategoriaProductoController)switchScene("MenuCategoriaProductoView.fxml",1000,680);
             menuCategoriaProductoView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -179,7 +179,7 @@ public class Main extends Application {
     
     public void formComprasView(int op){
         try{
-            FormularioCompraController formComprasView = (FormularioCompraController)switchScene("FormularioCompraView.fxml", 380, 520);
+            FormularioCompraController formComprasView = (FormularioCompraController)switchScene("FormularioCompraView.fxml", 350, 520);
             formComprasView.setOp(op);
             formComprasView.setStage(this);
         }catch(Exception e){
@@ -189,7 +189,7 @@ public class Main extends Application {
     
     public void menuCompraView(){
         try{
-            MenuCompraController menuCompraView = (MenuCompraController)switchScene("MenuCompraView.fxml",1000,700);
+            MenuCompraController menuCompraView = (MenuCompraController)switchScene("MenuCompraView.fxml",1000,680);
             menuCompraView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -198,7 +198,7 @@ public class Main extends Application {
     
       public void menuFacturaView(){
         try{
-            MenuFacturaController menuFacturaView = (MenuFacturaController)switchScene("MenuFacturaView.fxml",1000,700);
+            MenuFacturaController menuFacturaView = (MenuFacturaController)switchScene("MenuFacturaView.fxml",1000,680);
             menuFacturaView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
