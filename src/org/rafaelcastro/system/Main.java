@@ -28,6 +28,9 @@ import org.rafaelcastro.controller.MenuEmpleadoController;
 import org.rafaelcastro.controller.MenuFacturaController;
 import org.rafaelcastro.controller.MenuPrincipalController;
 import org.rafaelcastro.controller.MenuTicketSoporteController;
+import org.rafaelcastro.controller.MenuProductosController;
+import org.rafaelcastro.controller.FormProductosController;
+import org.rafaelcastro.controller.MenuPromocionesController;
 /**
  *
  * @author Usuario
@@ -204,6 +207,37 @@ public class Main extends Application {
             System.out.println(e.getMessage());
         }
     }
+    
+      
+        public void menuProductoView(){
+        try{
+            MenuProductosController menuProductosView = (MenuProductosController)switchScene("MenuProductosView.fxml",1300,600);
+            menuProductosView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+        
+        public void formprodustosView(){
+        try{
+            FormProductosController menuFromProducView = (FormProductosController)switchScene("FormProductosView.fxml",1000,600);
+            menuFromProducView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+        
+        public void menuPromocionesView(){
+        try{
+            MenuPromocionesController menupromoView = (MenuPromocionesController)switchScene("MenuPromocionesView.fxml",1000,600);
+            menupromoView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+        
+        
+      
 
    
     public static void main(String[] args) {
