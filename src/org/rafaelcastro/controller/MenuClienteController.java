@@ -27,6 +27,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import org.rafaelcastro.dao.Conexion;
 import org.rafaelcastro.dto.ClienteDTO;
 import org.rafaelcastro.model.Cliente;
+import org.rafaelcastro.report.GenerarReporte;
 import org.rafaelcastro.system.Main;
 import org.rafaelcastro.utils.SuperKinalAlert;
 
@@ -49,6 +50,8 @@ public class MenuClienteController implements Initializable {
     Button btnEditar, btnEliminar, btnBuscar;
     @FXML
     Button btnRegresar;
+    @FXML
+    Button btnVCli;
     @FXML
     TextField tfClienteId;
     @FXML
@@ -187,13 +190,14 @@ public class MenuClienteController implements Initializable {
         }else if(event.getSource()== btnEditar){
         ClienteDTO.getClienteDTO().setCliente((Cliente)tblClientes.getSelectionModel().getSelectedItem());
         stage.formClienteView(2);
+        
         }else if(event.getSource()== btnEliminar){
             if(SuperKinalAlert.getInstance().mostrarAlertaConfirmacion(405).get() == ButtonType.OK){
             int cliId = ((Cliente)tblClientes.getSelectionModel().getSelectedItem()).getClienteId();
             eliminarCliente(cliId);
-            cargarLista();
-            }
-        }else if(event.getSource()== btnBuscar){
+            cargarLista();        
+   }
+      }else if(event.getSource()== btnBuscar){
             tblClientes.getItems().clear();
             
             if(tfClienteId.getText().equals("")){

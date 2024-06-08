@@ -72,7 +72,7 @@ begin
     fetch cursorDetalleFactura into curFacturaId, curProductoId;
     if factId = curFacturaId then
 		set precio = (select P.precioVentaMayor from Productos P where P.productoId = curProductoId);
-		set total = total + (precio % 1.5);
+		set total = total + (precio % 0.12);
     end if;
     if i = (select count(*) from detalleFactura) then
 		leave totalLoop;
@@ -132,4 +132,6 @@ begin
 	end if;
 end $$
 delimiter ;
+
+
  

@@ -162,7 +162,7 @@ INSERT INTO Empleados(nombreEmpleado, apellidoEmpleado, sueldo, horaEntrada, hor
  ('Licia', 'Castillo', 5000.00, '02:00:00', '10:00:00', 1, NULL);
 
 INSERT INTO Facturas(fecha, hora, total, clienteId, empleadoId)VALUES
- ('2024-07-22', '10:00:00', 100.00, 1, 1);
+ ('2024-07-22', '10:00:00', 78.4, 1, 1);
 
 INSERT INTO Distribuidores(nombreDistribuidor, direccionDistribuidor, nitDistribuidor, telefonoDistribuidor, web)VALUES
  ('Distribuidor La concha', 'La reforma', '37891273871', '31892739173', 'www.LaConcha.com');

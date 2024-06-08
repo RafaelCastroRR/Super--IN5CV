@@ -31,6 +31,7 @@ import org.rafaelcastro.dao.Conexion;
 import org.rafaelcastro.model.Cliente;
 import org.rafaelcastro.model.Empleado;
 import org.rafaelcastro.model.Factura;
+import org.rafaelcastro.report.GenerarReporte;
 import org.rafaelcastro.system.Main;
 
 /**
@@ -47,7 +48,7 @@ public class MenuFacturaController implements Initializable {
     private static ResultSet resultset = null;
     
     @FXML
-    Button btnRegresar, btnGuardar, btnVaciar;
+    Button btnRegresar, btnGuardar, btnVaciar,btnVfacturas;
     
     @FXML
     TextField tfFacturaId, tfHora, tfTotal, tfFecha;
@@ -73,8 +74,10 @@ public class MenuFacturaController implements Initializable {
                 editarFacturas();
             }
         }else if(event.getSource() == btnVaciar){
-            vaciarCampos();
-        }
+            vaciarCampos();            
+        }else if(event.getSource() == btnVfacturas){
+            GenerarReporte.getInstace().generarFactura(Integer.parseInt(tfFacturaId.getText()));
+    }
     }
     
     

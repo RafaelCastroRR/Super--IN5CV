@@ -721,3 +721,8 @@ DELIMITER ;
 select * from productos;
 
 call sp_ListarFacturas();
+
+select * from Facturas;
+select * from Productos;
+
+select * from DetalleFactura;
